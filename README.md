@@ -1,86 +1,92 @@
-# 🚌 Where's My Ride?
+# Where's My Ride?
 
-**A datathon project by [Code Blooded]**  
-Built to solve one very relatable question: _“Did I just miss the bus???”_
+**A datathon project by Code Blooded**  
+This application addresses a common question faced by many transit users: “Did I just miss the bus?” 
 
-This app helps users get real-time predictions for bus travel, smart alternatives if they miss it, and personalized mobility recommendations using machine learning and rich transit data.
-
----
-
-## 🧠 What It Does
-
-- 🔍 **User Input:** Enter your starting point, destination, desired departure time, and day of the week.  
-- 🧠 **Smart Predictions:** Our machine learning model forecasts bus travel duration based on historical and live transit data.  
-- ⚠️ **Missed It? No Problem:** The app alerts you if you’re likely to miss your bus and suggests alternative options.  
-- 🚲 **Multi-Modal Suggestions:** Get recommendations for scooters, walking, biking, or other local micro-mobility options when the bus isn’t viable.  
-- 💡 **Fast & Intuitive:** Designed to keep the interface simple, so you spend less time planning and more time moving.
+The goal of this project is to provide users with real-time predictions of bus travel times, suggest alternative transportation options if they miss their bus, and offer personalized mobility recommendations by leveraging machine learning techniques and transit data.
 
 ---
 
-## 🛠 How It Works
+## Overview
 
-Here’s the tech under the hood:  
-
-- **Live Data Integration:** Real-time feeds from transit authorities combined with micro-mobility sources like bike and scooter share data.  
-- **Machine Learning Model:** Trained on sequences of bus stops, geographic coordinates, historical durations, and traffic patterns to predict travel times accurately.  
-- **Data Analysis:** Correlation studies and visualization comparing predicted vs actual travel durations to validate model performance.  
-- **Contextual Recommendations:** Factoring in weather conditions, bus schedules, and user preferences to suggest the best travel alternatives.  
-
-> For a full technical deep dive, check out our detailed project report 👉 [Where's My Ride.pdf](./Where%27s%20My%20Ride.pdf)
+Where's My Ride allows users to enter their starting point, destination, desired departure time, and day of the week. Using this input, the system predicts expected bus travel duration based on historical and live transit data. If the user is unlikely to catch their intended bus, the app provides alternative options such as walking, biking, or scooter use, aiming to simplify urban mobility and reduce wait times.
 
 ---
 
-## 🖼 Screenshots
+## Features
 
-<img src="https://github.com/your-username/your-repo/raw/main/screenshots/ui.png" width="500" alt="App UI sample" />
-
-*Pro Tip:* Drop your own screenshots in a `/screenshots` folder and update the image links here to keep this section fresh!
-
----
-
-## 🚀 What’s Next
-
-We’re excited about adding these features in the near future:  
-
-- 🔁 **Dynamic Re-Routing:** Real-time path updates if your bus is delayed or you miss a connection.  
-- 🔔 **Push Notifications & Alerts:** Timely reminders to catch your bus or switch modes.  
-- 🧍 **User Profiles & Preferences:** Customize mobility choices based on your habits and needs.  
-- 💰 **Monetization Strategies:** Exploring revenue models to sustain and grow the platform, including partnerships with transit and micro-mobility providers.
+- **User Input Interface:** Simple form to enter trip details including origin, destination, time, and day.  
+- **Predictive Modeling:** Utilizes machine learning to forecast bus travel times by analyzing historical trip data combined with real-time updates.  
+- **Missed Bus Alerts:** Provides clear indications if the user will miss the bus based on current schedules and predicted arrival times.  
+- **Multi-Modal Recommendations:** Suggests other transportation modes such as scooters, walking, or biking, depending on distance and availability.  
+- **Fast and User-Friendly:** Designed to be intuitive with minimal input required for quick decision-making.
 
 ---
 
-## 📄 Full Project Report
+## Technical Approach
 
-For an in-depth look at our methodology, data sources, model evaluation, and future directions:  
-📎 [Where's My Ride.pdf](./Where%27s%20My%20Ride.pdf)
+The system architecture includes:  
 
----
+- **Data Sources:** Integration of live transit data from local transportation authorities along with micro-mobility datasets (bike and scooter share systems).  
+- **Machine Learning Model:** Developed using scikit-learn, trained on variables including bus stop sequences, GPS coordinates, trip durations, and day/time features.  
+- **Model Validation:** Conducted correlation analysis and visual comparisons between predicted and actual travel times to evaluate accuracy and reliability.  
+- **Recommendation Engine:** Combines predicted travel times with contextual information such as weather conditions and transit availability to suggest the most efficient travel options.
 
-## 🔗 References & Data Sources
-
-- [Greensboro Transit Authority - ridegrtc.com](https://ridegrtc.com)  
-- [Bikeshare & Scooter Data from BTS](https://data.bts.gov/Bicycles-and-Pedestrians/Bikeshare-Docked-and-Dockless-and-E-scooter-System/cqdc-cm7d/about_data)  
-- [Virginia Datathon 2025](https://data.virginia.gov/organization/datathon-2025)  
-- [Jupyter Notebook](https://jupyter.org)
+For a comprehensive explanation of the methods and results, please refer to the full project report:  
+[Where's My Ride.pdf](./Where%27s%20My%20Ride.pdf)
 
 ---
 
-## 💻 Built With
+## Screenshots
 
-- **Python** — our main programming language  
-- **Pandas, Matplotlib, Seaborn** — for data wrangling and visualization  
-- **Scikit-learn** — powering the machine learning models  
-- **Jupyter Notebooks** — development environment  
-- ☕️ *And lots of caffeine* — because what’s coding without it?
+![App UI sample](https://github.com/your-username/your-repo/raw/main/screenshots/ui.png)
+
+You may update this section by placing your own screenshots in a `/screenshots` directory and updating the image links accordingly.
 
 ---
 
-## 🙌 Meet Team Code Blooded
+## Future Development
 
-- Margaret Shepard — Data Scientist & Project Lead  
+Planned enhancements include:  
+
+- **Dynamic Re-routing:** Implementing real-time updates to suggest alternate routes if delays or missed connections occur.  
+- **Notification System:** Adding push notifications to remind users when to leave or alert them of schedule changes.  
+- **User Preferences:** Allowing users to create profiles to customize transportation preferences and save frequent routes.  
+- **Monetization Strategies:** Exploring sustainable revenue models through partnerships or premium features to support ongoing development.
+
+---
+
+## Full Project Report
+
+The project report provides detailed information on data preprocessing, modeling techniques, evaluation metrics, and strategic recommendations:  
+[Where's My Ride.pdf](./Where%27s%20My%20Ride.pdf)
+
+---
+
+## References and Data Sources
+
+- Greensboro Transit Authority: [ridegrtc.com](https://ridegrtc.com)  
+- Bike and Scooter Share Data: [BTS Bikeshare Data](https://data.bts.gov/Bicycles-and-Pedestrians/Bikeshare-Docked-and-Dockless-and-E-scooter-System/cqdc-cm7d/about_data)  
+- Virginia Datathon 2025: [Virginia Datathon](https://data.virginia.gov/organization/datathon-2025)  
+- Jupyter Project: [jupyter.org](https://jupyter.org)
+
+---
+
+## Technologies Used
+
+- **Python** for core programming and data manipulation  
+- **Pandas, Matplotlib, Seaborn** for data analysis and visualization  
+- **Scikit-learn** for machine learning modeling  
+- **Jupyter Notebooks** as the development environment
+
+---
+
+## Team Members
+
+- Margaret Shepard — Data Scientist and Project Lead  
 - Jotham Zvikonyaukwa — Machine Learning Engineer  
-- Preciouc Ndunduri — Data Analyst & Visualization Expert
+- Preciouc Ndunduri — Data Analyst and Visualization Specialist
 
 ---
 
-> “Thank you for riding with us! Here’s to smoother commutes and fewer missed buses 🚌💨”
+Thank you for your interest in our project. We hope this tool will contribute to improving urban mobility and transit experiences.
